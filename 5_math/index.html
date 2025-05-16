@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学计算小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="main-menu" class="screen">
+            <h1>数学计算小游戏</h1>
+            <button class="operation-btn" data-operation="add">个位数加法</button>
+            <button class="operation-btn" data-operation="subtract">个位数减法</button>
+            <button class="operation-btn" data-operation="multiply">个位数乘法</button>
+        </div>
+
+        <div id="count-selection" class="screen hidden">
+            <h1>你要挑战的题目数量是</h1>
+            <button class="count-btn" data-count="5">5道</button>
+            <button class="count-btn" data-count="10">10道</button>
+            <button class="count-btn" data-count="15">15道</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <div id="timer">时间: 0秒</div>
+                <div id="progress">题目: 0/0</div>
+            </div>
+            <div id="question"></div>
+            <div id="options" class="options-container"></div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h1>答题结果</h1>
+            <div id="time-result">答题时长: 0秒</div>
+            <div id="total-questions">题目总数: 0</div>
+            <div id="correct-answers">答对数量: 0</div>
+            <div id="accuracy">正确率: 0%</div>
+            <button id="play-again">再来一局</button>
+            <button id="end-game">结束游戏</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
