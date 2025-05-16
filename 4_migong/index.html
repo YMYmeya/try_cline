@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷宫游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>迷宫游戏</h1>
+            <button id="start-btn">开始游戏</button>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <canvas id="maze-canvas"></canvas>
+            <div id="timer">时间: 0秒</div>
+        </div>
+        
+        <div id="end-screen" class="screen hidden">
+            <h2 id="result-text"></h2>
+            <button id="restart-btn">再来一局</button>
+            <button id="exit-btn">结束游戏</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

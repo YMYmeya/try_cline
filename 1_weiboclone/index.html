@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博克隆</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>微博克隆</h1>
+        <div class="user-info">
+            <span id="username">游客</span>
+            <button id="login-btn">登录</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="post-form">
+            <textarea id="post-content" placeholder="分享你的想法..."></textarea>
+            <button id="post-btn">发布</button>
+        </section>
+
+        <section class="posts" id="posts-container">
+            <!-- 帖子将在这里动态加载 -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
