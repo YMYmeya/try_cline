@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="menu-screen" class="screen">
+            <h1>Math Game</h1>
+            <button class="operation-btn" data-operation="add">两位数加法</button>
+            <button class="operation-btn" data-operation="subtract">两位数减法</button>
+            <button class="operation-btn" data-operation="multiply">两位数乘一位数</button>
+            <button class="operation-btn" data-operation="divide">两位数除以一位数</button>
+        </div>
+
+        <div id="count-screen" class="screen hidden">
+            <h1>你要挑战的题目数量是</h1>
+            <button class="count-btn" data-count="5">5道</button>
+            <button class="count-btn" data-count="10">10道</button>
+            <button class="count-btn" data-count="15">15道</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div class="question-container">
+                <div id="question"></div>
+                <div id="options" class="options-container"></div>
+            </div>
+            <div id="feedback"></div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h1>Results</h1>
+            <div id="stats"></div>
+            <button id="restart-btn">再来一局</button>
+            <button id="exit-btn">结束游戏</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
