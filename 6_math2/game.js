@@ -238,3 +238,4 @@ function exitGame() {
 
 // Start the game
 init();
+// PS D:\PycharmProjects\try_cline> start 5_math2/index.html
